@@ -1,0 +1,10 @@
+.DS_Store
+.vscode
+yarn-error.log
+
+.idea/
+node_modules/
+build/
+.env*
+
+/packages/web/storybook-web-static

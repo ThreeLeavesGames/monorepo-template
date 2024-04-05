@@ -1,0 +1,26 @@
+{
+  "name": "typescript-monorepo",
+  "version": "1.0.0",
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  },
+  "private": true,
+  "dependencies": {
+    "@monorepo/ui": "^1.0.0",
+    "@monorepo/utils": "^1.0.0"
+  },
+  "scripts": {
+    "build": "tsc --build --verbose",
+    "kill": "npx npkill",
+    "web-cra": "npm run start -w @monorepo/web-cra"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.3",
+    "@types/react-native": "^0.63.2",
+    "@typescript-eslint/eslint-plugin": "^7.5.0",
+    "prettier": "^3.2.5",
+    "ts-node": "^10.9.2"
+  }
+}

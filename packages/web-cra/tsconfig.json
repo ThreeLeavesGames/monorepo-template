@@ -1,0 +1,45 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "lib": ["DOM", "DOM.Iterable", "esnext"],
+    "noFallthroughCasesInSwitch": true,
+    "module": "esnext",
+    "baseUrl": "src",
+    "skipLibCheck": true
+  },
+  "include": ["public", "src"],
+  "exclude": ["node_modules", "../../node_modules"],
+  // "compilerOptions": {
+  //   "target": "es5",
+  //   "lib": [
+  //     "dom",
+  //     "dom.iterable",
+  //     "esnext"
+  //   ],
+  //   "allowJs": true,
+  //   "skipLibCheck": true,
+  //   "esModuleInterop": true,
+  //   "allowSyntheticDefaultImports": true,
+  //   "strict": true,
+  //   "forceConsistentCasingInFileNames": true,
+  //   "noFallthroughCasesInSwitch": true,
+  //   "module": "esnext",
+  //   "moduleResolution": "node",
+  //   "resolveJsonModule": true,
+  //   "isolatedModules": true,
+  //   // "emitDeclarationOnly": true,
+  //   "jsx": "react-jsx",
+  //   "composite": true,
+  //   "rootDir": "."
+  // },
+  // "exclude": [
+  //   "./config-overrides.js",
+    
+  // ],
+  "references": [
+    {
+      "path": "../common"
+    },
+  ]
+}

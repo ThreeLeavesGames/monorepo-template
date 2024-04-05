@@ -1,0 +1,18 @@
+{
+  "name": "@monorepo/ui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src",
+  "private":true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc --build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@monorepo/utils": "^1.0.0",
+    "moment": "^2.30.1"
+  }
+}
