@@ -18,17 +18,20 @@
   // ],
   "references": [
     {
-      "path": "./packages/utils"
-    },
-    {
-      "path": "./packages/ui"
-    },
-    {
       "path": "./packages/common"
     },
     {
       "path": "./packages/web-cra"
     },
+    {
+      "path": "./packages/mobile"
+    },
+    {
+      "path": "./packages/web-nextjs"
+    },
+    {
+      "path": "./packages/expo-app"
+    }
   ],
   // "include": ["**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]

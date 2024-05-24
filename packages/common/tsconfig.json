@@ -3,14 +3,17 @@
   "include": ["src/**/*"],
   "exclude": ["node_modules", "../../node_modules"],
   "compilerOptions": {
-    "jsx": "react",
+    "jsx": "react-native",
+    "moduleResolution": "Node",
     "experimentalDecorators": true,
-    // "noEmit": true,
-    "emitDeclarationOnly": true,
+    "noEmit": false,
+    // "emitDeclarationOnly": true,
     "isolatedModules": false,
     "typeRoots": ["../../node_modules/@types"],
-   // "types": ["declaration.d.ts"],
-    "checkJs": false
+  //  "types": ["./src/declaration.d.ts"],
+    "checkJs": false,
+    "rootDir": "./src",
+    "outDir": "./build",
   },
   // "compilerOptions": {
   //   "target": "es5",

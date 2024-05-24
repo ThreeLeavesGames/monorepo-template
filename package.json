@@ -4,16 +4,35 @@
   "workspaces": {
     "packages": [
       "packages/*"
-    ]
+    ],
+    "nohoist": [
+      "**/next",
+      "**/next/**",
+      "**/react",
+      "**/react/**",
+      "**/react-dom",
+      "**/react-dom/**",
+      "**/react-native",
+      "**/react-native/**",
+      "**/react-native-web",
+      "**/react-native-web/**",
+      "**/react-native-svg",
+      "**/react-native-svg/**",
+      "**/firebase/**",
+      "**/firebase",
+      "**/@react-native-firebase",
+      "**/@react-native-firebase/**",
+      "**/react-native-cheerio",
+      "**/react-native-cheerio/**",
+      "**/cheerio",
+      "**/cheerio/**"
+        ]
   },
   "private": true,
-  "dependencies": {
-    "@monorepo/ui": "^1.0.0",
-    "@monorepo/utils": "^1.0.0"
-  },
+  "dependencies": {},
   "scripts": {
     "build": "tsc --build --verbose",
-    "kill": "npx npkill",
+    "kill": "rm -f yarn.lock package-lock.json && npx npkill",
     "web-cra": "npm run start -w @monorepo/web-cra"
   },
   "devDependencies": {

@@ -19,8 +19,8 @@
       "dom",
       "dom.iterable"
     ],
-    "sourceMap": true,
+    // "sourceMap": true,
     "checkJs": false,
-    "composite": true
+    // "composite": true
   }
 }

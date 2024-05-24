@@ -1,7 +1,7 @@
 {
   "extends": "../../tsconfig.base.json",
   "compilerOptions": {
-    "jsx": "react-jsx",
+    "jsx": "react",
     "lib": ["DOM", "DOM.Iterable", "esnext"],
     "noFallthroughCasesInSwitch": true,
     "module": "esnext",
@@ -37,9 +37,9 @@
   //   "./config-overrides.js",
     
   // ],
-  "references": [
-    {
-      "path": "../common"
-    },
-  ]
+  // "references": [
+  //   {
+  //     "path": "../common"
+  //   },
+  // ]
 }
